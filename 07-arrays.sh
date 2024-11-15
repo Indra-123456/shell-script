@@ -3,8 +3,8 @@
 fruits=("mango" "apple" "pomo")
 
 
-echo "first fruit is : $fruit[0]"
+echo "first fruit is : $fruits[0]"
 
-echo "second fruit is : $fruit[1]"
+echo "second fruit is : $fruits[1]"
 
-echo "all fruits are : $fruit[@]"
+echo "all fruits are : $fruits[@]"
