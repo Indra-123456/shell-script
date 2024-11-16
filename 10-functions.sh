@@ -4,12 +4,12 @@
 ID=$(id -u)
 
 validate(){
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
     then
-        echo "error:  command need to be corrected"
+        echo "error:  $2....failed"
         exit 1;
     else
-        echo "success:: installtion  is successfull"
+        echo "$2..... success"
     fi 
 }
 
@@ -24,9 +24,9 @@ fi
 
 yum install -y mysql
 
-validate
+validate $? "Installing mysql"
 
 
 yum install git -y
 
-validate
+validate $? "installing git"
