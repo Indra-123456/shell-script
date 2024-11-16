@@ -20,3 +20,14 @@ then
 else
    echo "success:: installtion of my sql is successfull"
 fi        
+
+
+yum install git -y
+
+if [ $? -ne 0 ]
+then
+   echo "error: git command needs to be corrected"
+   exit 1;
+else
+   echo "success:: installtion of git is successfull"
+fi  
