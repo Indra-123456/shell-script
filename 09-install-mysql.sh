@@ -13,7 +13,7 @@ fi
 
 yum install mysql -y
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
    echo "error: mysql command need to be corrected"
    exit 1;
