@@ -23,14 +23,14 @@ validate(){
 
 if [ $ID -ne 0 ]
 then
-  echo "Error::he is a normal user, try install using root user"
+  echo "$R Error::he is a normal user, try install using root user $N"
   exit 1;
 else 
   echo "he is a root user"
 fi
 
 
-yum install -y mysqlll &>> $logfile
+yum install -y mysql &>> $logfile
 
 validate $? "Installing mysql"
 
