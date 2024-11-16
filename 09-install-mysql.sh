@@ -18,6 +18,7 @@ then
    exit 1;
 else
    echo "success:: installtion of my sql is successfull"
+fi   
 
 
 
