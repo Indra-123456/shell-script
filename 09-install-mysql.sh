@@ -8,7 +8,8 @@ then
   echo "Error::he is a normal user, try install using root user"
   exit 1;
 else 
-echo "he ia root user"
+  echo "he is a root user"
+fi
 
 yum install mysql -y
 
@@ -18,8 +19,4 @@ then
    exit 1;
 else
    echo "success:: installtion of my sql is successfull"
-fi   
-
-
-
-      
+fi        
