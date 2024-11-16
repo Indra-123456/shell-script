@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-ID=$(id -u)
+ID=$(id)
 
 if [ $ID -ne 0 ]
 then
