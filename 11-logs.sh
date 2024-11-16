@@ -14,19 +14,19 @@ N="\e[0m"
 validate(){
     if [ $1 -ne 0 ]
     then
-        echo "error:  $2.... $R failed $N"
+        echo -e "error:  $2.... $R failed $N"
         exit 1;
     else
-        echo "$2..... $G success $N"
+        echo -e "$2..... $G success $N"
     fi 
 }
 
 if [ $ID -ne 0 ]
 then
-  echo "$R Error::he is a normal user, try install using root user $N"
+  echo -e "$R Error::he is a normal user, try install using root user $N"
   exit 1;
 else 
-  echo "he is a root user"
+  echo -e "$G he is a root user $N"
 fi
 
 
